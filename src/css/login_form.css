@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../pictures/USALm.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  width: 100%;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+.boxx {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 350px;
+
+  height: 500px;
+  box-shadow: 0 0 40px 20px white;
+  perspective: 1000px;
+}
+.box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.card1,
+.card2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../pictures/students.jpg");
+  padding: 55px;
+  box-sizing: border-box;
+
+  backface-visibility: hidden;
+}
+.card2 {
+  transform: rotateY(180deg);
+}
+
+.card h1 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input-box {
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  margin: 6px 0;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  color: white;
+}
+::placeholder {
+  color: white;
+  font-size: 15px;
+}
+button {
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  margin: 35px 0 10px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.btn {
+  position: relative;
+}
+.btn::after {
+  content: "\27a4";
+  color: darkgreen;
+  line-height: 35px;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+.btn:hover {
+  background-color: darkgreen;
+}
+.card .btn2 {
+  margin-top: 70px;
+}
+.card .btn2:hover {
+  background-color: white;
+  color: black;
+}
+.card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+#username-error,
+#password-error {
+  background: rgba(225, 0, 0, 0.1);
+  margin-top: 5px;
+  width: 345px;
+  font-size: 15px;
+  color: red;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #ef9a9a;
+  display: none;
+}
+span {
+  font-size: x-large;
+  left: 80px;
+
+  transform: translate(0, -50%);
+  top: 36%;
+  cursor: pointer;
+  position: absolute;
+}
